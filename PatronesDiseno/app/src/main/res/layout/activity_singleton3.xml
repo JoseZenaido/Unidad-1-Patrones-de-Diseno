@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/best_android_wallpaper"
+    tools:context="mx.edu.utng.patronesdiseno.SingletonActivity1"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="530dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="match_parent">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Registrar Botella"
+              android:layout_gravity="center"
+              android:autoText="true"
+              android:fontFamily="@string/abc_font_family_body_1_material"
+              android:hint="@string/abc_font_family_body_1_material" />
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Marca:"
+              android:layout_gravity="center"
+              android:id="@+id/edt_marca"/>
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Tamano:"
+              android:id="@+id/edt_tamano"/>
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Contenido:"
+              android:id="@+id/edt_contenido"
+              />
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Tamano X porcion:"
+              android:id="@+id/edt_tamanoPorcion"/>
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Porcion X envase:"
+              android:id="@+id/edt_porcionXenvase"/>
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Proteina:"
+              android:id="@+id/edt_proteina"/>
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Grasas:"
+              android:id="@+id/edt_grasas"/>
+
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/bt_registrar"
+              android:text="@string/registrar_botella"
+              android:layout_gravity="center"/>
+
+
+      </LinearLayout>
+    </ScrollView>
+</LinearLayout>

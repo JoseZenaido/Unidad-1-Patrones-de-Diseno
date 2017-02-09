@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.edu.utng.patronesdiseno">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="APP"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="mx.edu.utng.patronesdiseno.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.SingletonActivity1"
+            android:label="Singleton: Mouse" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.SingletonActivity2"
+            android:label="Singleton: Persona" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.SingletonActivity3"
+            android:label="Singleton: Botella" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.SingletonActivity4"
+            android:label="Singleton: Lapicero" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.SingletonActivity5"
+            android:label="Singleton: Disco Duro" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.PrototypeActivity6"
+            android:label="Prototype: Auto" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.PrototypeActivity7"
+            android:label="Prototype: Casa" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.PrototypeActivity8"
+            android:label="Prototype: Puerta" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.PrototypeActivity9"
+            android:label="Prototype: Television" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.PrototypeActivity10"
+            android:label="Prototype: Bicicleta" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.StateActivity11"
+            android:label="State: Leon" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.StateActivity12"
+            android:label="State: Reloj" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.StateActivity13"
+            android:label="State: Foco" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.StateActivity14"
+            android:label="State: Bateria" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.StateActivity15"
+            android:label="State: Bandera" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.FactoryActivity16"
+            android:label="Factory: Figuras" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.FactoryActivity17"
+            android:label="Factory: Casa" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.MementoActivity18"
+            android:label="Memento: Estrella" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.MementoActivity19"
+            android:label="Memento: Arbol" />
+        <activity
+            android:name="mx.edu.utng.patronesdiseno.MementoActivity20"
+            android:label="Memento: VASO" />
+
+
+    </application>
+
+</manifest>

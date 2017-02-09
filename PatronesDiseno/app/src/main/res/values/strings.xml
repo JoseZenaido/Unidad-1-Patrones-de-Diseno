@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PatronesDiseno</string>
+    <string name="registrar">registrar</string>
+    <string name="registrar_botella">Registrar_Botella</string>
+    <string name="registrar_lapicero">registrar_lapicero</string>
+    <string name="registre_el_mouse">Registre el mouse</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string name="alimentacion">Alimentacion</string>
+    <string name="crear">crear</string>
+    <string name="imagen">imagen</string>
+    <string name="singleton2_persona">Singleton2: Persona</string>
+    <string name="singleton4_lapicero">Singleton4: Lapicero</string>
+    <string name="singleton5_disco_duro">Singleton5: Disco Duro</string>
+    <string name="rojo">rojo</string>
+    <string name="verde">verde</string>
+    <string name="azul">azul</string>
+    <string name="amarillo">amarillo</string>
+    <string name="negro">negro</string>
+    <string name="guardar">guardar</string>
+    <string name="deshacer">deshacer</string>
+    <string name="rehacer">rehacer</string>
+</resources>

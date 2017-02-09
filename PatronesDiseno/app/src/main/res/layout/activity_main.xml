@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black"
+    tools:context="MainActivity">-->
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+
+    >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Singleton1: Mouse"
+                android:id="@+id/button1"
+                android:textSize="10dp"
+                android:onClick="lanzarSingleton1"
+                android:textAlignment="center"
+                android:background="#29b463" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="@string/singleton2_persona"
+                android:id="@+id/button2"
+                android:textSize="10dp"
+                android:onClick="lanzarSingleton2"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#90a42f"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Singleton3: Botella"
+                android:id="@+id/button3"
+                android:textSize="10dp"
+                android:onClick="lanzarSingleton3"
+                android:textAlignment="center"
+                android:background="#29b463" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="@string/singleton4_lapicero"
+                android:id="@+id/button4"
+                android:textSize="10dp"
+                android:onClick="lanzarSingleton4"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#90a42f" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="@string/singleton5_disco_duro"
+                android:id="@+id/button5"
+                android:textSize="10dp"
+                android:onClick="lanzarSingleton5"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#29b463" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Prototype6: Auto "
+                android:id="@+id/button6"
+                android:textSize="10dp"
+                android:onClick="lanzarPrototype6"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#90a42f" />
+            <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Prototype7: Casa "
+            android:id="@+id/button7"
+            android:textSize="10dp"
+            android:onClick="lanzarPrototype7"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button1"
+            android:layout_toEndOf="@+id/button1"
+            android:background="#29b463" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Prototype8: Puerta "
+                android:id="@+id/button8"
+                android:textSize="10dp"
+                android:onClick="lanzarPrototype8"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#90a42f" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Prototype9: Television "
+                android:id="@+id/button9"
+                android:textSize="10dp"
+                android:onClick="lanzarPrototype9"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#29b463" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Prototype10: Bicicleta "
+                android:id="@+id/button10"
+                android:textSize="10dp"
+                android:onClick="lanzarPrototype10"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#90a42f" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="State11: Leon "
+                android:id="@+id/button11"
+                android:textSize="10dp"
+                android:onClick="lanzarState11"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#29b463" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="State12: Reloj "
+                android:id="@+id/button12"
+                android:textSize="10dp"
+                android:onClick="lanzarState12"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#90a42f" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="State13:  Foco"
+                android:id="@+id/button13"
+                android:textSize="10dp"
+                android:onClick="lanzarState13"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#29b463" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="State14: Bateria "
+                android:id="@+id/button14"
+                android:textSize="10dp"
+                android:onClick="lanzarState14"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:background="#90a42f" />
+           <Button
+               style="?android:attr/buttonStyleSmall"
+               android:layout_width="match_parent"
+               android:layout_height="33dp"
+               android:text="State15: Bandera "
+               android:id="@+id/button15"
+               android:textSize="10dp"
+               android:onClick="lanzarState15"
+               android:textAlignment="center"
+               android:layout_alignParentTop="true"
+               android:layout_toRightOf="@+id/button1"
+               android:layout_toEndOf="@+id/button1"
+               android:background="#29b463" />
+           <Button
+               style="?android:attr/buttonStyleSmall"
+               android:layout_width="match_parent"
+               android:layout_height="33dp"
+               android:text="Factory16 : Figuras"
+               android:id="@+id/button16"
+               android:textSize="10dp"
+               android:onClick="lanzarFactory16"
+               android:textAlignment="center"
+               android:layout_alignParentTop="true"
+               android:layout_toRightOf="@+id/button1"
+               android:layout_toEndOf="@+id/button1"
+               android:background="#90a42f" />
+           <Button
+               style="?android:attr/buttonStyleSmall"
+               android:layout_width="match_parent"
+               android:layout_height="33dp"
+               android:id="@+id/button17"
+               android:textSize="10dp"
+               android:onClick="lanzarFactory17"
+               android:textAlignment="center"
+               android:layout_alignParentTop="true"
+               android:layout_toRightOf="@+id/button1"
+               android:layout_toEndOf="@+id/button1"
+               android:background="#29b463"
+               android:text="Factoty17: Casa" />
+           <Button
+               style="?android:attr/buttonStyleSmall"
+               android:layout_width="match_parent"
+               android:layout_height="33dp"
+               android:text="Memento18: Estrella"
+               android:id="@+id/button18"
+               android:textSize="10dp"
+               android:onClick="lanzarMemento18"
+               android:textAlignment="center"
+               android:layout_alignParentTop="true"
+               android:layout_toRightOf="@+id/button1"
+               android:layout_toEndOf="@+id/button1"
+               android:background="#90a42f" />
+           <Button
+               style="?android:attr/buttonStyleSmall"
+               android:layout_width="match_parent"
+               android:layout_height="33dp"
+               android:text="Memento19: Arbol "
+               android:id="@+id/button19"
+               android:textSize="10dp"
+               android:onClick="lanzarMemento19"
+               android:textAlignment="center"
+               android:layout_alignParentTop="true"
+               android:layout_toRightOf="@+id/button1"
+               android:layout_toEndOf="@+id/button1"
+               android:background="#29b463" />
+           <Button
+               style="?android:attr/buttonStyleSmall"
+               android:layout_width="match_parent"
+               android:layout_height="33dp"
+               android:text="Memento20: vaso"
+               android:id="@+id/button20"
+               android:textSize="10dp"
+               android:onClick="lanzarMemento20"
+               android:textAlignment="center"
+               android:layout_alignParentTop="true"
+               android:layout_toRightOf="@+id/button1"
+               android:layout_toEndOf="@+id/button1"
+               android:background="#90a42f" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--</RelativeLayout>-->
